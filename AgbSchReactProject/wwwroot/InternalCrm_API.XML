@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InternalCRMAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.Signup(ApplicationCore.Dtos.Authentication.RegisterModel)">
+            <summary>
+            This endpoint is for  regiistration
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            <response code="200">Member Created</response>
+            <response code="204">No available content to return</response>   
+            <response code="400">Bad Request</response> 
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.SignupCoorporate(ApplicationCore.Dtos.Authentication.RegisterModelCorporate)">
+            <summary>
+            This endpoint is for  Signup Coorporate
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            <response code="200">Member Created</response>
+            <response code="204">No available content to return</response>   
+            <response code="400">Bad Request</response> 
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.DownloadApplicants(ApplicationCore.Dtos.ViewModels.PagingParameters,System.String,System.String,System.String)">
+            <summary>
+            This endpoint is to Download Applicants
+            </summary>
+            <param name="reportParameters"></param>
+            <param name="routeId"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.Login(ApplicationCore.Dtos.Authentication.LoginModel)">
+            <summary>
+            This endpoint is for  login
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.GetApplicantSignup(System.String)">
+            <summary>
+            /
+            </summary>
+            <param name="applicantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.ResetPasswordAsync(ApplicationCore.Dtos.Authentication.ResetPasswordMobileModel)">
+            <summary>
+            This endpoint is called after successful to reset password
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.ForgotPasswordAsync(ApplicationCore.Dtos.Authentication.ForgotPasswordModel)">
+            <summary>
+            This endpoint is called for Forgot Password
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.ChangePasswordAsync(System.String,ApplicationCore.Dtos.Authentication.ChangePasswordModel)">
+            <summary>
+            
+            </summary>
+            <param name="applicantId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.SetResponse(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Method to Set the Response
+            </summary>
+            <param name="code"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.CreateJobHistoryAsync(ApplicationCore.Dtos.Request.JobHistoryModel)">
+            <summary>
+            This endpoint is for  Creating Applicant Job History
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.CreateCurrentJobAsync(ApplicationCore.Dtos.Request.CurrentJobmodel)">
+            <summary>
+            This endpoint is for  Create Current Job
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.GetCurrentJob(System.String)">
+            <summary>
+            Get Current Job Info
+            </summary>
+            <param name="applicantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.GetProfBodyById(System.String)">
+            <summary>
+            This endpoint is for  get Applicant Job History by id
+            </summary>
+            <param name="applicantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.GetJobHistoryById(System.String)">
+            <summary>
+            This endpoint is for  get Applicant Job History by id
+            </summary>
+            <param name="applicantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.UploadStudentsApplicantAsync(ApplicationCore.Dtos.Request.StudentUploadModel)">
+            <summary>
+            This endpoint is for  Uploading Student by Admin
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.UpdateApplicantProfileAsync(ApplicationCore.Dtos.Applicant.UpdateProfileModel)">
+            <summary>
+            This endpoint is called to update applicant Profile
+            </summary>
+            <param name="model"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.ApplicantController.GetApplicantProfileByApplicantIdAsync(System.String)">
+            <summary>
+            This endpoint gets Applicant Profile By Id 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.AuthenticationController.Register(ApplicationCore.Dtos.Authentication.RegisterModel)">
+            <summary>
+            This endpoint is for  regiistration
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            <response code="200">Member Created</response>
+            <response code="204">No available content to return</response>   
+            <response code="400">Bad Request</response> 
+        </member>
+        <member name="M:MembershipAPI.Controllers.AuthenticationController.AdminLogin(ApplicationCore.Dtos.Authentication.LoginModel)">
+            <summary>
+            This endpoint is for  login
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.AuthenticationController.ResetPasswordAsync(ApplicationCore.Dtos.Authentication.ResetPasswordMobileModel)">
+            <summary>
+            This endpoint is called after successful to reset password
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.AuthenticationController.ForgotPasswordAsync(ApplicationCore.Dtos.Authentication.ForgotPasswordModel)">
+            <summary>
+            This endpoint is called for Forgot Password
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.AuthenticationController.ChangePasswordAsync(System.String,ApplicationCore.Dtos.Authentication.ChangePasswordModel)">
+            <summary>
+            This endpoint is called for Change Password
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.AuthenticationController.SetResponse(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Method to Set the Response
+            </summary>
+            <param name="code"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.PaymentController.ProcessPayment(ApplicationCore.Dtos.paymentModels.PaymentRequestViewMdelAPI)">
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:MembershipAPI.Controllers.PaymentController.GetProcessedPayment(System.String)" -->
+        <member name="M:MembershipAPI.Controllers.PaymentController.GetAllPaymentMade(ApplicationCore.Dtos.ViewModels.PagingParameters,System.String,System.String,System.String,System.String)">
+            <summary>
+             This endpoint is to get payment Payment Made
+            </summary>       
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.RoutesController.GetAllRouteAsync">
+            <summary>
+            This Endpoint is for getting all routes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.RoutesController.PaymentRouteAsync(System.Int32)">
+            <summary>
+            Get Payment Route for specific payment 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.SetUpController.GetAllApplicationPeriod">
+            <summary>
+            This endpoint is for  getting Application Period setup by Admin
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MembershipAPI.Controllers.SetUpController.CreateApplicationPeriodAsync(ApplicationCore.Dtos.Request.ApplicationPeriodModel)">
+            <summary>
+            This endpoint is for  Creating Application Period
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.GetRolesAsync">
+            <summary>
+            Enpoint to get all roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.GetUsersAsync">
+            <summary>
+            Enpoint to get all Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.GetAdminUsersAsync">
+            <summary>
+            Enpoint to get all Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.GetClaimNameAndValueAAsync">
+            <summary>
+            Enpoint to get all ClaimeName and Value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.CreateClaimNameAndValues(ApplicationCore.Dtos.Authentication.MyClaimTableModel)">
+            <summary>
+            Enpoint to Create Claims ClaimeName and Value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.PostRoleAsync(ApplicationCore.Dtos.Authentication.ApplicationRole)">
+            <summary>
+            Enpoint to Create Roles
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.RegisterUserAsync(ApplicationCore.Dtos.Authentication.RegisterAdminModel)">
+            <summary>
+            Enpoint to Register User By Admin
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.ActivateUserAsync(ApplicationCore.Dtos.Authentication.UserRole)">
+            <summary>
+            Enpoint to Activate register users or Add user to Role
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.RemoveUserFromRoleAsync(ApplicationCore.Dtos.Authentication.UserRole)">
+            <summary>
+            Enpoint to Remove User From Role
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.AuthUserAsync(ApplicationCore.Dtos.Authentication.LoginModel)">
+            <summary>
+            Endpoint for Authenticating users
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AssetManager.Controllers.AdministrationController.SetResponse(System.Int32,System.String,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            Method to Set the Response
+            </summary>
+            <param name="code"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
